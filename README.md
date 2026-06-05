@@ -21,7 +21,6 @@ pip install -r requirements.txt
 Install samtools separately:
 - macOS: `brew install samtools`
 - Linux: `sudo apt install samtools`
-- HPC: `module load samtools`
 
 **Option 2 — conda (includes samtools):**
 ```bash
