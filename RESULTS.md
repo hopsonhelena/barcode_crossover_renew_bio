@@ -2,20 +2,20 @@
  
 ## Background
  
-Two library preparations of *D5405* were sequenced using Oxford Nanopore Technology (ONT) to assess the extent of barcode crossover in Felix's samples. 
+Two unaligned BAM files subsampled to 100,000 reads, that each came from *D5405* barcodes from an ONT multiplexed sequencing run, were analyzed to assess barcode crossover.
  
 - `bc_zymo_1b_26-124-0070` — After (improved library prep)
 - `bc_zymo_3a_26-124-0051` — Before (original library prep)
-Each sample was subsampled to 100,000 reads for this analysis.
  
 ## Pipeline
  
-Unaligned BAM files that had *D5405* barcodes (barcodes excluded from files) were aligned to four reference genomes using `dorado aligner` (v1.3.1):
+BAM files were aligned to four reference genomes using dorado:
  
 - *D5405* — the expected reference
 - *Homo sapiens* (human)
 - *Oryza sativa* (rice)
 - Lambda phage
+  
 Reads that did not map to D5405 were extracted and realigned to the other three references to determine whether they were from other species. All alignments were filtered to primary reads with MAPQ ≥ 10 to exclude spurious alignments.
  
 ## Results
@@ -32,7 +32,7 @@ Reads that did not map to D5405 were extracted and realigned to the other three 
  
 ## Conclusion
  
-The results indicate barcode crossover occurring in the Before library preparation and improving in the After library preparation. The Before prep had ~6x more unmapped D5405 reads than the After prep. The After prep shows a much cleaner profile with 98.58% of readsmapping to D5405 and minimal signal in the non-D5405 references.
+The results indicate barcode crossover occurred in the Before library preparation and was reduced/improved in the After preparation. The Before prep had ~6x more unmapped D5405 reads than the After prep. The After prep shows a much cleaner profile with 98.58% of readsmapping to D5405 and minimal signal in the non-D5405 references.
 
 When those unmapped reads were realigned to human, lambda, and rice, the Before prep consistently mapped at higher rates across all three references: human - 2.17% vs 0.91%, lambda - 0.40% vs 0.07%, rice - 1.09% vs 0.77%.
 
