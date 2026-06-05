@@ -1,0 +1,9 @@
+sample,reference,total_reads,mapped_reads,percent_mapped
+bc_zymo_1b_26-124-0070.subsampled_100000,D5405,100218,98794,98.5791
+bc_zymo_1b_26-124-0070.subsampled_100000,homo_sapiens,100218,18,0.018
+bc_zymo_1b_26-124-0070.subsampled_100000,lambda,100218,7,0.007
+bc_zymo_1b_26-124-0070.subsampled_100000,oryza_sativa,100218,39,0.0389
+bc_zymo_3a_26-124-0051.subsampled_100000,D5405,99945,91656,91.7064
+bc_zymo_3a_26-124-0051.subsampled_100000,homo_sapiens,99945,205,0.2051
+bc_zymo_3a_26-124-0051.subsampled_100000,lambda,99945,40,0.04
+bc_zymo_3a_26-124-0051.subsampled_100000,oryza_sativa,99945,109,0.1091
