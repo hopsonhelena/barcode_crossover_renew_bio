@@ -2,7 +2,7 @@
  
 ## Background
  
-Two unaligned BAM files subsampled to 100,000 reads, that each came from *D5405* barcodes from an ONT multiplexed sequencing run, were analyzed to assess barcode crossover.
+Two unaligned BAM files downsampled to 100,000 *D5405* barcoded reads from ONT multiplexed sequencing runs were analyzed to assess barcode crossover.
  
 - `bc_zymo_1b_26-124-0070` — After (improved library prep)
 - `bc_zymo_3a_26-124-0051` — Before (original library prep)
